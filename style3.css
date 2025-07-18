@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 25px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4c60;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 22px;
+  padding: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.book-btn {
+  background: rgb(186, 27, 27);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 2px solid whitesmoke;
+}
+
+.book-btn:hover {
+  border: 2px solid whitesmoke;
+  background: black;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.menu-icon {
+  display: flex;
+}
+
+.booking {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.booking-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px red;
+  width: 100%;
+  max-width: 500px;
+
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group.terms {
+  display: flex;
+  align-items: center;
+}
+
+.input-group.terms input[type="checkbox"] {
+  margin-right: 10px;
+  width: auto;
+}
+
+.input-group.terms a {
+  color: black;
+  text-decoration: none;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: rgb(186, 27, 27);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+  border: 2px solid rgb(186, 27, 27);
+  color: white;
+}
+
+.p {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  color: black;
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+  .container {
+    height: auto;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .container i {
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .container img {
+    width: 80px;
+    height: auto;
+    padding: 3px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+  .vl {
+    border-radius: 1px solid yellow;
+  }
+
+  .hr {
+    border: 1px solid yellow;
+  }
+
+  .container p {
+    font-size: 10px;
+  }
+
+  .ticket {
+    padding: 4px;
+    margin-left: 9px;
+    margin-top: 10px;
+    gap: 3px;
+  }
+
+  .ticket:hover {
+    border: 1px solid yellow;
+  }
+
+  .booking-container {
+    width: 80%;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+
+  .container {
+    width: 800px;
+    height: auto;
+  }
+
+
+  .container i {
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 200px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .container img {
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+  .vl {
+    border-radius: 2px solid yellow;
+  }
+
+  .hr {
+    border: 1px solid yellow;
+  }
+
+  .container p {
+    font-size: 15px;
+  }
+
+  .ticket {
+    padding: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+    gap: 3px;
+  }
+
+  .ticket:hover {
+    border: 2px solid yellow;
+  }
+
+  .footer {
+    display: column;
+    padding: 10px 10px;
+  }
+
+  .footer-section ul li a {
+    font-size: medium;
+  }
+
+  .icon {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #333;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+
+  /* Hidden container box */
+  .container-box {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .slider {
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .slide {
+    min-width: 63px;
+    height: 180px;
+  }
+
+  .slide img {
+    width: 63px;
+    gap: 0px;
+    padding: 0;
+  }
+
+  .p {
+    display: block;
+  }
+}

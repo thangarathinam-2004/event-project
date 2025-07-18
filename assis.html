@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/0ac982c9cb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Music Artist Event</title>
+    <style>
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            color: black;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer-section h2 {
+            font-size: 200%;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .footer-section ul li {
+            padding: 10px;
+        }
+
+        .footer-section ul li a {
+            font-size: larger;
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-section ul li a:hover {
+            color: red;
+        }
+
+        .footer-section button {
+            margin: 20px;
+            padding: 15px 35px;
+            color: white;
+            background-color: rgb(186, 27, 27);
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-section button:hover {
+            border: 2px solid rgb(186, 27, 27);
+            background-color: black;
+            color: white;
+
+        }
+
+        .p {
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e1e1e;
+            padding: 25px 25px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4c60;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 22px;
+            padding: 2px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .book-btn {
+            background: rgb(186, 27, 27);
+            color: white;
+            margin-right: 50px;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border: 2px solid whitesmoke;
+        }
+
+        .book-btn:hover {
+            border: 2px solid whitesmoke;
+            background: black;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 4px 0;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <nav>
+        <div class="logo">🎵 Eventify</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="event.html">Home</a>
+            <a href="#">Upcoming Events</a>
+            <a href="assis.html">Artists</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+            <button class="book-btn">Book Now</a></button>
+        </div>
+    </nav>
+
+    <!-- Artist Section -->
+    <section style="padding: 20px; text-align: center;">
+        <img src="image/download.jfif" alt="Anirudh" style="width: 250px; border-radius: 10px; margin-top: 100px;">
+        <h2>Anirudh</h2>
+        <p style="max-width: 600px; margin: 10px auto;">
+            Anirudh is an Indian music composer, singer, and music producer known for his works in Indian cinema and
+            international collaborations. He has won two Academy Awards, two Grammy Awards, a BAFTA Award, and a Golden
+            Globe.
+        </p>
+    </section>
+    <hr>
+
+    <!-- Event Info -->
+    <section style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+        <h2>📍 Event</h2>
+        <p><strong>Date:</strong> August 25, 2025</p>
+        <p><strong>Location:</strong> 123 Event St, Cuddalore, India</p>
+        <p><strong>Time:</strong> 7:00 PM Onwards</p>
+    </section>
+    <hr>
+
+
+    <div class="footer">
+        <div class="footer-section">
+            <h2>FESTIVAL</h2>
+            <ul>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Lineup</a></li>
+                <li><a href="#">Our Other Festivals</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>help</h2>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>SOCIAL</h2>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-section updates">
+            <h3>BE THE FIRST TO KNOW</h3>
+            <button><a href="contact.html">Contact Us</a></button>
+        </div>
+    </div>
+    <hr>
+    <div class="p">
+        <p>By accessing this page, you confirm that you have read, understood, and agreed to our Terms of Service,
+            Privacy Policy, and Content Guidelines. All rights reserved.</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

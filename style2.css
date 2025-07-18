@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.background {
+  background-color: rgb(39, 38, 38);
+  background: url('') no-repeat center/cover;
+  height: 100%;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 25px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4c60;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 22px;
+  padding: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+
+.book-btn {
+  background: rgb(186, 27, 27);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 2px solid whitesmoke;
+}
+
+.book-btn:hover {
+  border: 2px solid whitesmoke;
+  background: black;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+.position {
+  padding-top: 100px;
+}
+
+.ticket {
+  margin-left: 300px;
+  background-color: rgb(186, 27, 27);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.ticket:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(186, 27, 27);
+}
+
+.hr {
+  color: rgb(186, 27, 27);
+  border: 2px solid rgb(186, 27, 27);
+}
+
+.poster {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster img {
+  width: 500px;
+  height: 500px;
+  margin: 0pc 60px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px black;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.page2 {
+  width: 100%;
+  margin: 10px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px black;
+}
+
+.card i {
+  font-size: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card i:hover {
+  color: rgb(186, 27, 27);
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card hr {
+  margin: 25px;
+}
+
+.book {
+  margin: 80px;
+  font-weight: bold;
+  padding: 10px 50px;
+  background-color: rgb(186, 27, 27);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.book:hover {
+  border: 2px solid rgb(186, 27, 27);
+  background-color: black;
+  color: white;
+}
+
+
+
+.shake-effect {
+  animation: shake 5s linear infinite;
+}
+
+.background h3 {
+  padding: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.background h1 {
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+}
+
+.update {
+  margin: 20px 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(186, 27, 27);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.update:hover {
+  border: 2px solid rgb(186, 27, 27);
+  background-color: black;
+  color: white;
+}
+
+.h1 {
+  color: black;
+  font-size: 250%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.slider {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  perspective: 1000px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.slide {
+  min-width: 190px;
+  height: 400px;
+  margin-bottom: 30px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.slide img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slide:hover {
+  transform: scale(1.1) rotateY(0deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.page {
+  margin: 20px 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+.page h1 {
+  color: black;
+  margin: 15px;
+  font-size: 300%;
+}
+
+.page p {
+  font-size: 130%;
+}
+
+.page img {
+  width: 650px;
+  height: 650px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 5px 25px red;
+}
+
+.page i {
+  font-size: xx-large;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: ;
+  background-color: rgb(186, 27, 27);
+  border-radius: 50%;
+  color: black;
+  border: 2px solid black;
+  position: relative;
+  animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.partner {
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: center;
+}
+
+.partner h1 {
+  font-size: 400%;
+  padding: 15px;
+}
+
+.partner img {
+  width: 230px;
+  height: 200px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  color: black;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 200%;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-section ul li {
+  padding: 10px;
+}
+
+.footer-section ul li a {
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
+
+.footer-section button {
+  margin: 20px;
+  padding: 15px 35px;
+  color: white;
+  background-color: rgb(186, 27, 27);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-section button:hover {
+  border: 2px solid rgb(186, 27, 27);
+  background-color: black;
+  color: white;
+
+}
+
+.p {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+
+  .background {
+    height: 100hv;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .hr {
+    border: 1px solid yellow;
+  }
+
+  .ticket {
+    padding: 4px;
+    margin-left: 9px;
+    margin-top: 10px;
+    gap: 3px;
+  }
+
+  .ticket:hover {
+    border: 1px solid yellow;
+  }
+
+  .poster {
+    display: inline-block;
+  }
+
+  .poster img {
+    width: 250px;
+    height: 400px;
+    margin: 5px 39px;
+  }
+
+  .update {
+    margin: 5px 30px;
+  }
+
+  .background h1 {
+    font-size: 20px;
+  }
+
+  .background h3 {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 260px;
+    height: 350px;
+    margin: 0px;
+
+  }
+
+  .card i {
+    padding: 5px;
+    margin: 5px 3px;
+    font-size: smaller;
+  }
+
+  .book {
+    margin: 10px 30px;
+    padding: 10px 40px;
+  }
+
+  .page h1 {
+    font-size: 150%;
+    margin: 5px;
+  }
+
+  .page p {
+    font-size: 100%;
+  }
+
+  .page img {
+    width: 280px;
+    height: 300px;
+  }
+
+  .partner img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .footer {
+    display: column;
+    padding: 10px 10px;
+  }
+
+  .footer-section ul li a {
+    font-size: medium;
+  }
+
+  .icon {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #333;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+
+  /* Hidden container box */
+  .container-box {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .slider {
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .slide {
+    min-width: 63px;
+    height: 180px;
+  }
+
+  .slide img {
+    width: 63px;
+    gap: 0px;
+    padding: 0;
+  }
+
+  .p {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+  .background {
+    height: 100hv;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .ticket {
+    padding: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+    gap: 3px;
+  }
+
+  .ticket:hover {
+    border: 2px solid yellow;
+  }
+
+  .poster {
+    height: 550px;
+  }
+
+  .poster img {
+    width: 350px;
+    height: 450px;
+    margin: 10px 20px;
+    gap: 5px;
+  }
+
+  .background h1 {
+    font-size: 24px;
+  }
+
+  .background h3 {
+    font-size: 18px;
+  }
+
+  .update {
+    margin: 15px 150px;
+    padding: 10px 20px;
+  }
+
+  .card {
+    width: 310px;
+    height: 440px;
+    margin: 0px;
+  }
+
+  .book {
+    padding: 10px 40px;
+    margin: 10px 30px;
+  }
+
+  .card i {
+    padding: 10px;
+    margin: 4px;
+  }
+
+  .slider {
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .slide {
+    min-width: 150px;
+    height: 280px;
+  }
+
+  .slide img {
+    width: 150px;
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+@media (min-width:800px) and (max-width:1500px) {
+  .update {
+    padding: 15px 25px;
+  }
+
+  .slider {
+    width: 95%;
+  }
+
+}
